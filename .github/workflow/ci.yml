@@ -4,7 +4,7 @@ on:
   push:
     branches: [ "ci/cd" ]
   pull_request:
-    branches: [ "main" ]
+    branches: [ "ci/cd" ]
 
 jobs:
   
