@@ -7,6 +7,7 @@ import { useAuth } from './api/AuthContext';
 function Topbar() {
   const { isAuthenticated, user, logout } = useAuth();
   const navigate = useNavigate();
+  const count: number = "hello";
 
   if (!isAuthenticated) return null;
 
