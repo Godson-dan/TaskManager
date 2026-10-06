@@ -23,6 +23,9 @@ FROM nginx:alpine
 # Remove Nginx's default website
 RUN rm -rf /usr/share/nginx/html/*
 
+#ngix configuration
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
 # Copy the Vite build output into Nginx
 COPY --from=builder /app/dist /usr/share/nginx/html
 

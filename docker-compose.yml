@@ -1,11 +1,9 @@
 services:
   backend:
-    build:  
-      context: ./backend
-      dockerfile: Dockerfile
+    image: beejay12/taskmanager-backend:latest
     restart: always
     ports:
-      - "3001:4000"
+      - "4000:4000"
     environment:
       MONGO_URI: ${MONGODB_URI}
     depends_on:
