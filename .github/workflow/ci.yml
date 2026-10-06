@@ -12,6 +12,11 @@ jobs:
     name: Test
     runs-on: ubuntu-latest
 
+    defaults:
+      workflow:
+        run:
+          working-directory: frontend
+
     steps:
       - name: Checkout repository
       - uses: actions/checkout@v4
